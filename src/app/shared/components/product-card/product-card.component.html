@@ -1,0 +1,45 @@
+<div  class='card'>
+    <img [src]="item?.img" />
+    <h3>{{name}}</h3>
+    <h3
+      style="
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 15px;
+      "
+    >
+      {{ item.name }}
+    </h3>
+    <p style="color: wheat;">{{childLike}}</p>
+    <div class="bottom">
+      <div class="price">
+        <div class="new-price">
+          <p>Price: {{ item.Newprice }}</p>
+        </div>
+
+        <div class="old-price">
+          <p>{{ item.Oldprice }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="img">
+        <img [src]="i?.store">
+    </div> -->
+    <div class="rating">
+      <!-- <div class="stars">
+        <div *ngFor="let item of [1, 2, 3, 4, 5]">
+          <img [src]="i?.Item" />
+        </div>
+      </div> -->
+      <!-- <div *ngFor="let item of [1, 2, 3, 4, 5]">
+            <img [src]="i?.Item">
+        </div> -->
+      <div class="img">
+        <img [src]="item?.store" />
+      </div>
+    </div>
+
+    <button (click)="onLikeCount()">Like</button>
+  
+</div>

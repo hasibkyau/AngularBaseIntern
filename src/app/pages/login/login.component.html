@@ -1,0 +1,17 @@
+<div class="container">
+    <form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
+        <input type="text" placeholder="name" formControlName="name">
+        <br>
+        <input type="text" placeholder="email" formControlName="email">
+        <br>
+        <button>Add Certificate</button>
+        <br>
+        <ng-container formArrayName="certificates" >
+            <div *ngFor="let data of certificatesData.controls ; let i=index" [formGroupName]="i">
+                <input formControlName="degree" type="text" placeholder="Certificate">
+            </div>
+        </ng-container>
+        <br>
+        <button type="submit">Save</button>
+    </form>
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="form-container" style="padding: 60px">
+    <form action="" [formGroup]="formData" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Product Name </mat-label>
+        <input formControlName="name" matInput placeholder="Company Name" />
+        <mat-error>Enter your name</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Price</mat-label>
+        <input formControlName="price" matInput placeholder="Company Name" />
+        <mat-error>Enter your company name</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Email </mat-label>
+        <input formControlName="email" matInput placeholder="Company Name" />
+        <mat-error>Enter your company name</mat-error>
+      </mat-form-field>
+
+      <button mat-stroked-button color="warn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

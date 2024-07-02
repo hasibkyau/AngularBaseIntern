@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="sub-container">
+        <h2>Sign Up</h2>
+
+        <div class="form-container">
+            <form [formGroup]="formData" action="">
+                <div class="input-container">
+                    <label for="fname">First Name: </label>
+                    <input type="text" formControlName="fname">
+                </div>
+
+                <br>
+                <br>
+                
+
+                <label for="fname">Last Name: </label>
+                <input type="text">
+                <br>
+                <br>
+    
+                <label for="fname">Email</label>
+                <input type="text">
+                <br>
+                <br>
+    
+                <label for="fname">Phone</label>
+                <input type="text">
+                <br>
+                <br>
+    
+                <label for="fname">Password</label>
+                <input type="text">
+                <br>
+                <br>
+                
+                <label for="fname">Re-Password</label>
+                <input type="text">
+                <br>
+                <br>
+
+                <div class="btn" (click)="onSubmit()">Submit</div>
+            </form>
+        </div>
+
+
+    </div>
+</div>
