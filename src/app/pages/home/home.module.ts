@@ -6,11 +6,13 @@ import { HeaderModule } from 'src/app/core/header/header.module';
 import { ProductCardModule } from 'src/app/shared/components/product-card/product-card.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from 'src/app/materials/materials.module';
+import { Assignment1Component } from './assignment1/assignment1.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
+    Assignment1Component,
   ],
   imports: [
     CommonModule,
